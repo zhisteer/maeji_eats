@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+.search-form{
+	display:flex;
+	flex-direction: column;
+	align-items:baseline;
+}
+.place-row, .search-container{
+    height: auto !important;
+    opacity: 1 !important;
+}
+
+.search-container{
+	margin: 20px;
+}
+
+/* Category Filtering Styles */
+.filter-icon {
+	margin: 40px;
+	transition: all 0.2s ease-in-out;
+}
+
+.filter-box {
+	color: white;
+	margin:20px;
+	border: 3px solid #fff !important;
+	border-radius: 10px;
+	text-align: center;
+	display: flex;
+}
+
+.filter-box:hover .filter-icon{
+	width: 0;
+	opacity: 0;
+}
+
+.category-icons {
+    width: 0px;
+    overflow: hidden;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+}
+
+.category-icons input {
+    display: none;
+}
+
+.category-icons label:hover {
+    color: lightsteelblue;
+}
+
+.category-icons label {
+	width: 100px;
+}
+
+/* Show category icons when hovering over filter icon */
+.filter-box:hover .category-icons{
+    width: 300px;
+    opacity: 1;
+}

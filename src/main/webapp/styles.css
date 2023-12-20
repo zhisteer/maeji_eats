@@ -1,0 +1,493 @@
+/* Reset and General Styles */
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Dosis");
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding");
+
+body {
+    background-color: darkslategray;
+}
+
+h1, label {
+    font-family: "Nanum Gothic Coding";
+    color: white;
+}
+
+hr {
+    border-top: 3px solid;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-brand {
+    font-family: "Dosis";
+    font-size: 50px;
+    color: white;
+    margin-left: 10px;
+}
+
+.navbar {
+    font-family: "Nanum Gothic Coding";
+    font-size: 25px;
+    color: white;
+}
+
+.item-container {
+    border: 3px solid #fff !important;
+    border-radius: 10px;
+    margin: 50px;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.search-container {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    height: 10px;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.item-container:hover .search-container {
+    height: 60px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.search-input {
+    flex: 1;
+    padding: 20px;
+    width: 600px;
+    border: 1px;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    overflow: hidden;
+}
+
+.search-button {
+    border: 1px;
+    background-color: white;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: -2px;
+    overflow: hidden;
+}
+
+.place-card {
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    margin: 10px;
+    width: 40%;
+    overflow: hidden;
+    justify-content: space-between;
+    transition: all 0.2s ease-in-out;
+}
+
+.place-row {
+    display: flex;
+    justify-content: space-around;
+    height: 0px;
+    opacity: 0;
+    transition: height 0.5s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.place-column{
+	display: flex;
+	flex-direction: column;
+}
+
+.card-like {
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+	border-radius: 10px;
+	width: 50px;
+	border: 1px solid #000 !important;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.item-container:hover .place-row {
+    height: 200px;
+    opacity: 1;
+}
+
+.place-card:hover {
+    background-color: lightsteelblue;
+}
+
+.place-title {
+    font-family: "Nanum Gothic Coding";
+    flex: 1 0 0;
+}
+
+.place-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    height: 0px;
+    opacity: 0;
+    transition: height 0.5s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.category-card {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.category-card:hover {
+    color: lightblue;
+}
+
+.item-container:hover .categories {
+    height: 120px;
+    opacity: 1;
+}
+
+.category-text {
+    font-family: "Nanum Gothic Coding";
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.form-container {
+    border: 3px solid #fff !important;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.btn {
+    margin-top: 10px;
+    border: 1px solid #fff !important;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.btn:hover {
+    background-color: lightsteelblue;
+}
+
+.type-select {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+}
+
+.type-select input {
+    display: none;
+}
+
+.type-select label {
+    cursor: pointer;
+    border: 1px solid #fff !important;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.type-select label:hover {
+    background-color: lightsteelblue;
+}
+
+.type-select input:checked + label {
+    background-color: lightsteelblue;
+}
+
+.admin-button{
+	padding: 20px;
+	border: 3px solid #fff !important;
+	border-radius: 10px;
+	width: 200px;
+	margin: auto;
+	margin-top: 100px;
+	text-align: center;
+	cursor: pointer;
+}
+.admin-button:hover {
+	background-color: lightsteelblue;
+}
+
+.admin-button-text{
+	font-family: "Nanum Gothic Coding";
+	font-size: 30px;
+	color: white;
+}
+
+.place-container {
+    padding: 20px;
+    display: flex;
+    margin: 10px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+
+.place-logo {
+    border-radius: 10px;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.place-words {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.place-words .place-title {
+    font-family: "Nanum Gothic Coding";
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.place-words .place-description {
+    padding: 10px;
+    margin: 10px 0;
+    font-family: "Nanum Gothic Coding";
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.place-type{
+	background-color: transparent;
+    border: 1px solid lightsteelblue !important;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    margin-right: 10px;
+    padding: 10px;
+    color: white;
+    transition: all 0.3s;
+    
+    
+}
+
+.place-type:hover {
+	background-color: rgba(255, 255, 255, 0.1);;
+}
+
+.place-actions {
+    display: flex;
+    align-items: center;
+}
+
+.place-actions .like-section {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.place-actions .like-section .like-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: lightsteelblue;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.place-actions .like-section .like-button:hover {
+    text-decoration: underline;
+}
+
+.place-actions .like-section .like-count {
+    color: white;
+    font-weight: bold;
+}
+
+.place-actions .visit-button {
+    padding: 10px;
+    border: 2px solid #fff !important;
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.place-actions .visit-button:hover {
+    background-color: lightsteelblue;
+}
+
+
+/* Menu and Reviews Styles */
+
+
+.menu-container,
+.reviews-container {
+    margin: 40px;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.menu-category {
+	color: white;
+    flex: 1 1 100%; /* Full width within the flex container */
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.menu-item img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.menu-content {
+    flex-grow: 1; /* Allow content to take up remaining space */
+}
+
+.menu-item h4 {
+    color: white;
+}
+
+.menu-item span {
+    font-weight: bold;
+    color: lightsteelblue;
+}
+
+.like-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.like-button {
+    background-color: transparent;
+    border: 1px solid lightsteelblue !important;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    color: lightsteelblue;
+}
+
+.has-liked-button {
+	background-color: white;
+}
+
+
+.section-heading {
+    font-family: "Nanum Gothic Coding";
+    color: white;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.review {
+	background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.title-rating {
+	display: flex;
+	justify-content: space-between;
+}
+
+.user-info {
+	color: lightsteelblue;
+    
+}
+
+.user-info h4{
+	font-size: 10px;
+	margin: 0px;
+}
+
+
+.rating {
+    color: lightsteelblue;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.rating-value {
+    font-weight: bold;
+}
+
+.review-title {
+    color: white;
+    font-size: 24px;
+}
+
+.review-date {
+    color: white;
+    font-size: 12px;
+    margin-bottom: 2px;
+    
+}
+
+.review-comment {
+    color: white;
+    font-size: 16px;
+}
+
+
+
